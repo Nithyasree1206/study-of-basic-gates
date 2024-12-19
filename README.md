@@ -65,8 +65,22 @@ Y= A⊕B
 **PROGRAM**
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
+module de1(a, b, c1, c2, c3, c4, c5, c6, c7);
+    input a, b;
+    output c1, c2, c3, c4, c5, c6, c7;
+    assign c1 = ~a;
+    assign c2 = a & b;
+    assign c3 = a | b;
+    assign c4 = ~(a & b);
+    assign c5 = ~(a | b);
+    assign c6 = a ^ b;
+    assign c7 = ~(a ^ b);
+endmodule
 
- Developed by: RegisterNumber: 
+
+
+ Developed by:S.NITHYASREE
+ RegisterNumber:24900149
  
 **Logic symbol & Truthtable**
 ![truthtable1](https://github.com/user-attachments/assets/aece9be8-ba08-4f56-9038-b45f082a14eb)
@@ -74,11 +88,13 @@ Program for logic gates and verify its truth table in quartus using Verilog prog
 
 
 **RTL realization Output:** 
-<img width="944" alt="wf1" src="https://github.com/user-attachments/assets/de6d9874-22ae-451b-9b80-6fb9d195ec2a">
+
+<img width="749" alt="LOGICGATE1" src="https://github.com/user-attachments/assets/53057714-1ccb-4ffe-bf10-f61113802562" />
+
 
 **RTL**
 
-![LG1](https://github.com/user-attachments/assets/f2db92da-efc5-48cd-9ff0-0b2db9c39711)
+<img width="960" alt="waveform1" src="https://github.com/user-attachments/assets/3eb2a39b-2d27-4885-83a6-28bfd91b9c39" />
 
 **Result:**
 The truth table of the specified logic gates (AND, OR, NOT, NAND, NOR, XOR, XNOR)
